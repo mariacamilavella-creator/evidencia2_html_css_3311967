@@ -1,11 +1,38 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import CardLayout
+	from "../layouts/CardLayout.astro";
+import InputText
+	from "../components/InputText.astro"
+import iphone from"../assets/iphone.jpg";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<CardLayout>
+	<h2 class="subtitulo" slot="subtitulo">Iphone 17 Pro Max</h2>
+	<h3 class="descripcion" slot="descripcion">
+Especificaciones principales
+<br>
+Capacidad de almacenamiento: 512 GB
+<br>
+Tamaño de la pantalla: 6.3
+Cámara posterior: 48 MP
+Cámara frontal: 18 MP
+Sistema operativo específico: iOS 26
+Memoria RAM: 12GB</h3>
+
+</CardLayout>
+
+<style>
+	.subtitulo{
+		font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+		color: #000000;
+		margin:10px;
+    }
+	.descripcion{
+		font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+		color: #494848;
+		margin:10px;
+	}
+</style>
