@@ -4,22 +4,31 @@ import CardLayout
 import InputText
 	from "../components/InputText.astro"
 import iphone from"../assets/iphone.jpg";
-
+import estrellas from "../assets/ESTRELLAS.jpg";
+import ButtonBuy from "../components/ButtonBuy.astro";
 ---
 
 <CardLayout>
 	<h2 class="subtitulo" slot="subtitulo">Iphone 17 Pro Max</h2>
 	<h3 class="descripcion" slot="descripcion">
-Especificaciones principales
-<br>
-Capacidad de almacenamiento: 512 GB
-<br>
-Tamaño de la pantalla: 6.3
-Cámara posterior: 48 MP
-Cámara frontal: 18 MP
-Sistema operativo específico: iOS 26
-Memoria RAM: 12GB</h3>
-
+		Especificaciones principales:
+		<br>
+		Capacidad de almacenamiento: 512 GB
+		<br>
+		Tamaño de la pantalla: 6.3
+		<br>
+		Cámara posterior: 48 MP
+		<br>
+		Cámara frontal: 18 MP
+		<br>
+		Sistema operativo específico: iOS 26
+		<br>
+		Memoria RAM: 12GB
+	</h3>
+	<ButtonBuy
+		etiqueta="Comprar"
+		slot="boton-compra"
+	/>
 </CardLayout>
 
 <style>

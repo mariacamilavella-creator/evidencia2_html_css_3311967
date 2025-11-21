@@ -1,6 +1,7 @@
 ---
 import Iphone from '../assets/iphone.jpg';
 import Carrito from '../assets/carrito.png';
+import estrellas from "../assets/ESTRELLAS.jpg";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +13,11 @@ import Carrito from '../assets/carrito.png';
 <body>
     <div class="form">
         <img class="carrito" src={Carrito.src}/>
-        <img src={Iphone.src} />
+        <img class="iphone"src={Iphone.src} />
         <slot name="subtitulo"/>
         <slot name="descripcion"/>
+        <img class="estrellas" src={estrellas.src}/>
+        <slot name="boton-compra">
     </div>
 
 </body>
@@ -34,4 +37,15 @@ import Carrito from '../assets/carrito.png';
         margin: 10px 100px 10px 10px;
         padding-left: 180px;
     }
+    .estrellas{
+        width: 120px;
+        margin: 1px 100px 10px 10px;
+        padding: center;
+    }
+    .iphone{
+        width: 210px;
+        margin: 1px 100px 10px 10px;
+        padding: center;
+    }
+
 </style>
